@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <>
-      <Routes>
+      <Routes basename={process.env.PUBLIC_URL}>
         <Route path='*' element={<Main />}></Route>
       </Routes>
     </>
