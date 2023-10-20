@@ -1,0 +1,69 @@
+.section_content {
+    background-color: #fff;
+    border-radius: 32px;
+    padding: 40px;
+    position: relative;
+    max-width: 100%;
+    height: 100%;
+    box-sizing: border-box; /* padding, border를 고려해 전체 크기 계산 */
+    font-family: 'Poppins', Helvetica, sans-serif;
+    overflow: auto;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    flex-direction: row;
+    height: stretch;
+}
+
+.vcentered {
+    vertical-align: middle; /* 내용을 수직, 가운데 정렬(inline-block) */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row; /* 내부 요소들 가로 정렬 */
+    flex-wrap: wrap; /* 줄 바꿈 허용 */
+    justify-content: center; /* 내부 요소들 가운데 정렬 */
+    align-items: center; /* 수직축 기준 내부 요소들 가운데 정렬 */
+    text-align: center; /* 텍스트를 수평 가운데 정렬 */
+}
+
+.greet{
+    font-size: 35px;
+    font-weight: bold;
+    color: darkslategrey;
+    flex: 1;
+    margin-left: 30px;
+}
+
+.homeImg{
+    width: 50%;
+    border-radius: 32px;
+    box-sizing: border-box;
+    flex:1 ;
+    box-shadow: 0 0 100px -5px rgb(0 0 0 / 30%);
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.blinking-text {
+    animation: blink 10s infinite; /* 깜빡임 효과를 5초 간격으로 반복 */
+}
+
+em{
+    font-size: 25px;
+}

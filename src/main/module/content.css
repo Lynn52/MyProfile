@@ -1,0 +1,27 @@
+.content_area {
+    position: absolute;
+    right: 0;
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    max-width: calc(100% - 340px); /* 좌측 사이드 프로필 영역 제외하고 렌더링 */
+    /* overflow:hidden; */
+}
+
+.section_content {
+    background-color: #fff;
+    border-radius: 32px;
+    padding: 40px;
+    position: relative;
+    max-width: 100%;
+    height: 100%;
+    box-sizing: border-box; /* padding, border를 고려해 전체 크기 계산 */
+}
+
+/* 화면 크기가 최대 너비 1024px 이하일 때 적용 */
+@media(max-width: 1024px) {
+    .content_area {
+        max-width: 100%;
+        border-radius: 0;
+    }
+}

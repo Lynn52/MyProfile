@@ -1,0 +1,82 @@
+.page-title{
+    display: inline-block;
+    position: relative;
+    margin: 10px 0px 40px 0px;
+    font-family: 'Poppins', Helvetica, sans-serif;
+    font-weight: 50px;
+    font-size: 50px;
+}
+
+.carousel-area{
+    position: absolute;
+    width: 50%;
+    height: 600px;
+}
+
+img.carousel{
+    width: 100%;
+    height: 100%;
+}
+
+.content-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.textbox{
+    font-size: 18px;
+    flex: 1;
+    padding-left: 40px;
+    line-height: 1.5;
+}
+
+.textbox-cv{
+    font-size: 18px;
+    flex: 1;
+    padding: 40px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+    border: 2px solid #e5e5e5;
+    border-radius: 10px;
+    margin: 20px;
+    transition: transform 0.3s ease;
+    opacity: 80%;
+}
+
+.textbox-cv:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 100px -5px rgb(0 0 0 / 10%);
+    background-color: #c7e67d;
+    color: black;
+    opacity: 100%;
+    cursor: pointer;
+}
+
+.cv-title{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.mb-3{
+    color: lightslategray;
+}
+
+.nav-tabs .nav-link{
+    margin-bottom: calc(-1 * var(--bs-nav-tabs-border-width));
+    border: var(--bs-nav-tabs-border-width) sodlid transparent;
+    border-top-right-radius: var(--bs-nav-tabs-border-radius);
+    border-bottom-left-radius: var(--bs-nav-tabs-border-radius);
+    color: lightslategrey;
+}
+
+.detailedInfo{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.fs-20{font-size: 20px;}
+.fs-15{font-size: 15px;}
+
+span{
+    padding: 0px 0px 0px 0px;
+}
